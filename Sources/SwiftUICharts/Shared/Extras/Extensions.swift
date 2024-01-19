@@ -115,6 +115,8 @@ extension Color {
         return Color(.darkGray)
         #elseif os(macOS)
         return Color(.windowBackgroundColor)
+        #else 
+        return Color(.systemBackground)
         #endif
     }
 }
